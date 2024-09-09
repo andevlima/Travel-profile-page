@@ -5,6 +5,7 @@
 }
 
 :root {
+  /* usando variáveis para organizar e acelerar a escrita do código */
   --brand-color: #EF5F4C;
   --background-color: #ffffff;
   --surface-color: #F5F5F5;
@@ -18,4 +19,33 @@
   --text: 16px/150% var(--font-family);
   --text-md: 14px/175% var(--font-family);
   --text-sm: 12px/175% var(--font-family);
+}
+
+body {
+  font: var(--text);
+  color: var(--text-color-secondary);
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+  /* cor inherit herda a cor do elemento pai (body) */
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--brand-color);
+}
+
+.container {
+  /* padding inline é o contrário do padding block, ele adiciona espaaço apenas nas laterais */
+  padding-inline: 32px;
+  max-width: 1280px;
+  /* margin inline adiciona espaço apenas nas laterais */
+  margin-inline: auto;
+}
+
+.bg-surface-color {
+  background-color: var(--surface-color);
 }

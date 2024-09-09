@@ -1,0 +1,10 @@
+footer {
+  display: flex;
+  gap: 24px;
+  padding-block: 24px;
+}
+
+/* nth-child seleciona um dos filhos do elemento pelo numero (1=primeiro filho...) */
+footer span:nth-child(1) {
+  margin-right: auto;
+}

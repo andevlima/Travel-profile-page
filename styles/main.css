@@ -1,0 +1,12 @@
+main {
+  display: flex;
+  max-width: 1280px;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding-block: 24px;
+}
+
+main>img {
+  width: 286px;
+  /* caso as imagens não formem um quadrado perfeito, adicionar height, e object-fit:cover */
+}

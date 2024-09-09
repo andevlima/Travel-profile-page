@@ -2,6 +2,7 @@ footer {
   display: flex;
   gap: 24px;
   padding-block: 24px;
+  font: var(--text-md);
 }
 
 /* nth-child seleciona um dos filhos do elemento pelo numero (1=primeiro filho...) */
